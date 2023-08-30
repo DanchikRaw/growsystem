@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5214e81-b475-4e7e-b009-e28b931de5ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/services/Device/Device.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/theme-provider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/theme/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/workers/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <workItem from="1689917180037" duration="6581000" />
       <workItem from="1691045788921" duration="6103000" />
       <workItem from="1691310300013" duration="1818000" />
-      <workItem from="1693380602249" duration="5567000" />
+      <workItem from="1693380602249" duration="7003000" />
     </task>
     <servers />
   </component>

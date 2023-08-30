@@ -12,7 +12,7 @@ const fetcher = async (url) => {
 export default function Workers() {
     const [selectedDate, setSelectedDate] = useState(getFormattedDate(new Date()));
 
-    const { data, error } = useSWR(`http:///localhost:5000/api/workers?deviceId=64d9e87ec10062001c717531&date=${selectedDate}`, fetcher);
+    const { data, error } = useSWR(`https://growsystembackend-production.up.railway.app/api/workers?deviceId=64d9e87ec10062001c717531&date=${selectedDate}`, fetcher);
 
     if (error) return <div>Error loading data</div>;
     if (!data) return <div>Loading...</div>;
