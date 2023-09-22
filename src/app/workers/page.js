@@ -1,21 +1,11 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { Box, Text, Input } from '@chakra-ui/react'; // Подключите необходимые компоненты из вашей библиотеки
-import useSWR from 'swr';
-
-const fetcher = async (url) => {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
-};
+import {Box, Text, Input, HStack, Flex} from '@chakra-ui/react'; // Подключите необходимые компоненты из вашей библиотеки
+import PageTitle from "@/app/components/Layout/PageTitle";
+import WorkersList from "@/app/components/pages/workers/WorkersList/WorkersList";
 
 export default function Workers() {
     const [selectedDate, setSelectedDate] = useState(getFormattedDate(new Date()));
-
-    const { data, error } = useSWR(`https://growsystembackend-production.up.railway.app/api/workers?deviceId=64d9e87ec10062001c717531&date=${selectedDate}`, fetcher);
-
-    if (error) return <div>Error loading data</div>;
-    if (!data) return <div>Loading...</div>;
 
     const handleDateChange = event => {
         setSelectedDate(event.target.value);
@@ -23,22 +13,17 @@ export default function Workers() {
 
     return (
         <Box p={4}>
-            <Text fontWeight={'bold'} fontSize={'xl'}>Активность сотрудников</Text>
-            <Box maxW={'250px'}>
-                <Text fontSize={'m'}>Фильтры</Text>
-                <Text fontSize={'s'}>Дата: </Text>
-                <Input type="date" onChange={handleDateChange} value={selectedDate} />
+            <PageTitle>Employees</PageTitle>
+            <Box p='5' boxShadow='md' borderRadius={8}>
+                <HStack justifyContent={'space-between'}>
+                    <Text color="#2A4365" fontWeight={'bold'} fontSize={'lg'}>History of the day</Text>
+                    <Input maxW='200px' type="date" onChange={handleDateChange} value={selectedDate} />
+                </HStack>
+                <WorkersList date={selectedDate} />
             </Box>
-            {data.map((item, index) => (
-                <Box key={index}>
-                    <Text>Date and Time: {item.datetime}</Text>
-                    <Text>Name: {item.name}</Text>
-                </Box>
-            ))}
         </Box>
     );
 }
-
 function getFormattedDate(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');

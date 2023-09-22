@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5214e81-b475-4e7e-b009-e28b931de5ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/PageTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Icons/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Icons/Employees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Icons/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Menu/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkerListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/workers/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/workers/page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +63,7 @@
       <recent name="C:\Users\mi\Documents\Projects\growsystem\src\app\workers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mi\Documents\Projects\growsystem\src\app\components\Layout" />
       <recent name="C:\Users\mi\Documents\Projects\growsystem\src\app" />
     </key>
   </component>
@@ -69,7 +82,8 @@
       <workItem from="1689917180037" duration="6581000" />
       <workItem from="1691045788921" duration="6103000" />
       <workItem from="1691310300013" duration="1818000" />
-      <workItem from="1693380602249" duration="7003000" />
+      <workItem from="1693380602249" duration="8166000" />
+      <workItem from="1695364883080" duration="9705000" />
     </task>
     <servers />
   </component>

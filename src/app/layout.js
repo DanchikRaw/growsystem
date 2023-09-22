@@ -1,4 +1,5 @@
 import ThemeProvider from './theme-provider';
+import Layout from "@/app/components/Layout/Layout";
 
 export const metadata = {
     title: 'GROWSYSTEM - Automatic farm control system',
@@ -8,9 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html>
-        <body>
-        <ThemeProvider>{children}</ThemeProvider>
-        </body>
+            <body>
+                <ThemeProvider>
+                    <Layout>{children}</Layout>
+                </ThemeProvider>
+            </body>
         </html>
     );
 }
