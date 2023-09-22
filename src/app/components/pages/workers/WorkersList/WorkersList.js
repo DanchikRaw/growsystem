@@ -1,4 +1,4 @@
-import {Box, SimpleGrid, Text} from "@chakra-ui/react";
+import {SimpleGrid} from "@chakra-ui/react";
 import useSWR from "swr";
 import WorkerListItem from "@/app/components/pages/workers/WorkersList/WorkerListItem";
 

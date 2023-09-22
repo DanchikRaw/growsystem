@@ -1,6 +1,6 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import {Box, Text, Input, HStack, Flex} from '@chakra-ui/react'; // Подключите необходимые компоненты из вашей библиотеки
+import React, { useState } from 'react';
+import {Box, Text, Input, HStack} from '@chakra-ui/react'; // Подключите необходимые компоненты из вашей библиотеки
 import PageTitle from "@/app/components/Layout/PageTitle";
 import WorkersList from "@/app/components/pages/workers/WorkersList/WorkersList";
 

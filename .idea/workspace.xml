@@ -13,8 +13,8 @@
       <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Menu/Menu.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/components/Layout/Sidebar/Sidebar.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkerListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/workers/WorkersList/WorkersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/workers/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/workers/page.js" afterDir="false" />
@@ -83,7 +83,7 @@
       <workItem from="1691045788921" duration="6103000" />
       <workItem from="1691310300013" duration="1818000" />
       <workItem from="1693380602249" duration="8166000" />
-      <workItem from="1695364883080" duration="9705000" />
+      <workItem from="1695364883080" duration="10242000" />
     </task>
     <servers />
   </component>
