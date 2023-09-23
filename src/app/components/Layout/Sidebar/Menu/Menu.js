@@ -10,11 +10,11 @@ export default function Menu() {
         <VStack spacing='3' align='stretch'>
             <HStack onClick={() => router.push('/')}>
                 <Dashboard/>
-                <Button fontSize="md" bg="#38B2AC" color="#ffffff" flexGrow="1">Dashboard</Button>
+                <Button _hover={{bg: "#41CBC4"}} fontSize="md" bg="#38B2AC" color="#ffffff" flexGrow="1">Dashboard</Button>
             </HStack>
             <HStack onClick={() => router.push('/workers')}>
                 <Employees/>
-                <Button fontSize="md" bg="#38B2AC" color="#ffffff" flexGrow="1">Employees</Button>
+                <Button _hover={{bg: "#41CBC4"}} fontSize="md" bg="#38B2AC" color="#ffffff" flexGrow="1">Employees</Button>
             </HStack>
         </VStack>
     );

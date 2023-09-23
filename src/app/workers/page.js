@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import {Box, Text, Input, HStack} from '@chakra-ui/react'; // Подключите необходимые компоненты из вашей библиотеки
 import PageTitle from "@/app/components/Layout/PageTitle";
 import WorkersList from "@/app/components/pages/workers/WorkersList/WorkersList";
+import { utcToZonedTime, format } from 'date-fns-tz';
+
 
 export default function Workers() {
+
     const [selectedDate, setSelectedDate] = useState(getFormattedDate(new Date()));
 
     const handleDateChange = event => {
@@ -15,7 +18,7 @@ export default function Workers() {
         <Box p={4}>
             <PageTitle>Employees</PageTitle>
             <Box p='5' boxShadow='md' borderRadius={8}>
-                <HStack justifyContent={'space-between'}>
+                <HStack mb='2' justifyContent={'space-between'}>
                     <Text color="#2A4365" fontWeight={'bold'} fontSize={'lg'}>History of the day</Text>
                     <Input maxW='200px' type="date" onChange={handleDateChange} value={selectedDate} />
                 </HStack>
@@ -24,9 +27,11 @@ export default function Workers() {
         </Box>
     );
 }
-function getFormattedDate(date) {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
+function getFormattedDate() {
+    const timeZone = 'Asia/Bangkok';
+    const zonedDate = utcToZonedTime(new Date(), timeZone);
+    const year = zonedDate.getFullYear();
+    const month = String(zonedDate.getMonth() + 1).padStart(2, '0');
+    const day = String(zonedDate.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
 }
