@@ -1,5 +1,6 @@
+"use client"
 import {Box, HStack, Link, Text} from "@chakra-ui/react";
-import Arrow from "@/app/components/pages/workers/WorkersList/Arrow";
+import Arrow from "@/app/components/Layout/WorkersList/Arrow";
 
 export default function WorkerListItem({item}) {
     return (

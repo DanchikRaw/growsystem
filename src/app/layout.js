@@ -1,5 +1,7 @@
+"use client"
 import ThemeProvider from './theme-provider';
-import Layout from "@/app/components/Layout/Layout";
+import Sidebar from "@/app/components/Layout/Sidebar/Sidebar";
+import {Box, Flex} from "@chakra-ui/react";
 
 export const metadata = {
     title: 'GROWSYSTEM - Automatic farm control system',
@@ -11,7 +13,12 @@ export default function RootLayout({ children }) {
         <html>
             <body>
                 <ThemeProvider>
-                    <Layout>{children}</Layout>
+                    <Flex>
+                        <Sidebar/>
+                        <Box flexGrow='1'>
+                            {children}
+                        </Box>
+                    </Flex>
                 </ThemeProvider>
             </body>
         </html>
